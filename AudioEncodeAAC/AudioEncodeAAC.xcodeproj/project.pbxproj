@@ -1,0 +1,410 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		09AD7CC62452959800159169 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09AD7CC52452959800159169 /* AppDelegate.swift */; };
+		09AD7CC82452959800159169 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09AD7CC72452959800159169 /* ViewController.swift */; };
+		09AD7CCA2452959D00159169 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 09AD7CC92452959D00159169 /* Assets.xcassets */; };
+		09AD7CCD2452959D00159169 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09AD7CCB2452959D00159169 /* Main.storyboard */; };
+		09AD7CDB2452970400159169 /* libavformat.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 09AD7CD62452970300159169 /* libavformat.dylib */; };
+		09AD7CDC2452970400159169 /* libavformat.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = 09AD7CD62452970300159169 /* libavformat.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		09AD7CDD2452970400159169 /* libavcodec.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 09AD7CD72452970300159169 /* libavcodec.dylib */; };
+		09AD7CDE2452970400159169 /* libavcodec.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = 09AD7CD72452970300159169 /* libavcodec.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		09AD7CE12452970400159169 /* libavutil.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 09AD7CD92452970400159169 /* libavutil.dylib */; };
+		09AD7CE22452970400159169 /* libavutil.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = 09AD7CD92452970400159169 /* libavutil.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		09AD7CE32452970400159169 /* libavdevice.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 09AD7CDA2452970400159169 /* libavdevice.dylib */; };
+		09AD7CE42452970400159169 /* libavdevice.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = 09AD7CDA2452970400159169 /* libavdevice.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		09AD7CE92452976000159169 /* AudioRecord.c in Sources */ = {isa = PBXBuildFile; fileRef = 09AD7CE82452976000159169 /* AudioRecord.c */; };
+		09AD7CEB245297E300159169 /* libswresample.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 09AD7CEA245297E300159169 /* libswresample.dylib */; };
+		09AD7CEC245297E300159169 /* libswresample.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = 09AD7CEA245297E300159169 /* libswresample.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		09AD7CE52452970400159169 /* Embed Libraries */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				09AD7CDE2452970400159169 /* libavcodec.dylib in Embed Libraries */,
+				09AD7CE22452970400159169 /* libavutil.dylib in Embed Libraries */,
+				09AD7CE42452970400159169 /* libavdevice.dylib in Embed Libraries */,
+				09AD7CDC2452970400159169 /* libavformat.dylib in Embed Libraries */,
+				09AD7CEC245297E300159169 /* libswresample.dylib in Embed Libraries */,
+			);
+			name = "Embed Libraries";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		09AD7CC22452959800159169 /* AudioEncodeAAC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AudioEncodeAAC.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		09AD7CC52452959800159169 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		09AD7CC72452959800159169 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		09AD7CC92452959D00159169 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		09AD7CCC2452959D00159169 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		09AD7CCE2452959D00159169 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		09AD7CCF2452959D00159169 /* AudioEncodeAAC.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = AudioEncodeAAC.entitlements; sourceTree = "<group>"; };
+		09AD7CD62452970300159169 /* libavformat.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libavformat.dylib; path = AudioEncodeAAC/lib/libavformat.dylib; sourceTree = "<group>"; };
+		09AD7CD72452970300159169 /* libavcodec.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libavcodec.dylib; path = AudioEncodeAAC/lib/libavcodec.dylib; sourceTree = "<group>"; };
+		09AD7CD82452970300159169 /* libswscale.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libswscale.dylib; path = AudioEncodeAAC/lib/libswscale.dylib; sourceTree = "<group>"; };
+		09AD7CD92452970400159169 /* libavutil.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libavutil.dylib; path = AudioEncodeAAC/lib/libavutil.dylib; sourceTree = "<group>"; };
+		09AD7CDA2452970400159169 /* libavdevice.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libavdevice.dylib; path = AudioEncodeAAC/lib/libavdevice.dylib; sourceTree = "<group>"; };
+		09AD7CE62452976000159169 /* AudioEncodeAAC-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AudioEncodeAAC-Bridging-Header.h"; sourceTree = "<group>"; };
+		09AD7CE72452976000159169 /* AudioRecord.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AudioRecord.h; sourceTree = "<group>"; };
+		09AD7CE82452976000159169 /* AudioRecord.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = AudioRecord.c; sourceTree = "<group>"; };
+		09AD7CEA245297E300159169 /* libswresample.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libswresample.dylib; path = AudioEncodeAAC/lib/libswresample.dylib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		09AD7CBF2452959800159169 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				09AD7CDD2452970400159169 /* libavcodec.dylib in Frameworks */,
+				09AD7CE12452970400159169 /* libavutil.dylib in Frameworks */,
+				09AD7CE32452970400159169 /* libavdevice.dylib in Frameworks */,
+				09AD7CDB2452970400159169 /* libavformat.dylib in Frameworks */,
+				09AD7CEB245297E300159169 /* libswresample.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		09AD7CB92452959800159169 = {
+			isa = PBXGroup;
+			children = (
+				09AD7CC42452959800159169 /* AudioEncodeAAC */,
+				09AD7CC32452959800159169 /* Products */,
+				09AD7CD52452970300159169 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		09AD7CC32452959800159169 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				09AD7CC22452959800159169 /* AudioEncodeAAC.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		09AD7CC42452959800159169 /* AudioEncodeAAC */ = {
+			isa = PBXGroup;
+			children = (
+				09AD7CC52452959800159169 /* AppDelegate.swift */,
+				09AD7CE72452976000159169 /* AudioRecord.h */,
+				09AD7CE82452976000159169 /* AudioRecord.c */,
+				09AD7CC72452959800159169 /* ViewController.swift */,
+				09AD7CC92452959D00159169 /* Assets.xcassets */,
+				09AD7CCB2452959D00159169 /* Main.storyboard */,
+				09AD7CCE2452959D00159169 /* Info.plist */,
+				09AD7CCF2452959D00159169 /* AudioEncodeAAC.entitlements */,
+				09AD7CE62452976000159169 /* AudioEncodeAAC-Bridging-Header.h */,
+			);
+			path = AudioEncodeAAC;
+			sourceTree = "<group>";
+		};
+		09AD7CD52452970300159169 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				09AD7CEA245297E300159169 /* libswresample.dylib */,
+				09AD7CD72452970300159169 /* libavcodec.dylib */,
+				09AD7CDA2452970400159169 /* libavdevice.dylib */,
+				09AD7CD62452970300159169 /* libavformat.dylib */,
+				09AD7CD92452970400159169 /* libavutil.dylib */,
+				09AD7CD82452970300159169 /* libswscale.dylib */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		09AD7CC12452959800159169 /* AudioEncodeAAC */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 09AD7CD22452959D00159169 /* Build configuration list for PBXNativeTarget "AudioEncodeAAC" */;
+			buildPhases = (
+				09AD7CBE2452959800159169 /* Sources */,
+				09AD7CBF2452959800159169 /* Frameworks */,
+				09AD7CC02452959800159169 /* Resources */,
+				09AD7CE52452970400159169 /* Embed Libraries */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AudioEncodeAAC;
+			productName = AudioEncodeAAC;
+			productReference = 09AD7CC22452959800159169 /* AudioEncodeAAC.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		09AD7CBA2452959800159169 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1140;
+				LastUpgradeCheck = 1140;
+				ORGANIZATIONNAME = jdapple;
+				TargetAttributes = {
+					09AD7CC12452959800159169 = {
+						CreatedOnToolsVersion = 11.4.1;
+						LastSwiftMigration = 1140;
+					};
+				};
+			};
+			buildConfigurationList = 09AD7CBD2452959800159169 /* Build configuration list for PBXProject "AudioEncodeAAC" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 09AD7CB92452959800159169;
+			productRefGroup = 09AD7CC32452959800159169 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				09AD7CC12452959800159169 /* AudioEncodeAAC */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		09AD7CC02452959800159169 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				09AD7CCA2452959D00159169 /* Assets.xcassets in Resources */,
+				09AD7CCD2452959D00159169 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		09AD7CBE2452959800159169 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				09AD7CE92452976000159169 /* AudioRecord.c in Sources */,
+				09AD7CC82452959800159169 /* ViewController.swift in Sources */,
+				09AD7CC62452959800159169 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		09AD7CCB2452959D00159169 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				09AD7CCC2452959D00159169 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		09AD7CD02452959D00159169 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		09AD7CD12452959D00159169 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		09AD7CD32452959D00159169 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = AudioEncodeAAC/AudioEncodeAAC.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = FUS4AN23VD;
+				ENABLE_HARDENED_RUNTIME = NO;
+				INFOPLIST_FILE = AudioEncodeAAC/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/AudioEncodeAAC/lib",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.livi.AudioEncodeAAC;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "AudioEncodeAAC/AudioEncodeAAC-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/AudioEncodeAAC/include/";
+			};
+			name = Debug;
+		};
+		09AD7CD42452959D00159169 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = AudioEncodeAAC/AudioEncodeAAC.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = FUS4AN23VD;
+				ENABLE_HARDENED_RUNTIME = NO;
+				INFOPLIST_FILE = AudioEncodeAAC/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/AudioEncodeAAC/lib",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.livi.AudioEncodeAAC;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "AudioEncodeAAC/AudioEncodeAAC-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/AudioEncodeAAC/include/";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		09AD7CBD2452959800159169 /* Build configuration list for PBXProject "AudioEncodeAAC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				09AD7CD02452959D00159169 /* Debug */,
+				09AD7CD12452959D00159169 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		09AD7CD22452959D00159169 /* Build configuration list for PBXNativeTarget "AudioEncodeAAC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				09AD7CD32452959D00159169 /* Debug */,
+				09AD7CD42452959D00159169 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 09AD7CBA2452959800159169 /* Project object */;
+}
