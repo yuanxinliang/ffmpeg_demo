@@ -1,0 +1,404 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		09AD7D2524553E9700159169 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09AD7D2424553E9700159169 /* AppDelegate.swift */; };
+		09AD7D2724553E9700159169 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09AD7D2624553E9700159169 /* ViewController.swift */; };
+		09AD7D2924553E9800159169 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 09AD7D2824553E9800159169 /* Assets.xcassets */; };
+		09AD7D2C24553E9900159169 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09AD7D2A24553E9900159169 /* Main.storyboard */; };
+		09AD7D3724555E1500159169 /* VideoEncode.c in Sources */ = {isa = PBXBuildFile; fileRef = 09AD7D3624555E1500159169 /* VideoEncode.c */; };
+		09AD7D4924557C5600159169 /* libavdevice.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 09AD7D3A24555E9400159169 /* libavdevice.dylib */; };
+		09AD7D4A24557C5600159169 /* libavdevice.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = 09AD7D3A24555E9400159169 /* libavdevice.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		09AD7D4B24557C5600159169 /* libavformat.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 09AD7D3924555E9400159169 /* libavformat.dylib */; };
+		09AD7D4C24557C5600159169 /* libavformat.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = 09AD7D3924555E9400159169 /* libavformat.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		09AD7D4D24557C5600159169 /* libavutil.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 09AD7D3D24555E9400159169 /* libavutil.dylib */; };
+		09AD7D4E24557C5600159169 /* libavutil.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = 09AD7D3D24555E9400159169 /* libavutil.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		09AD7D5024557C8000159169 /* libavcodec.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 09AD7D3B24555E9400159169 /* libavcodec.dylib */; };
+		09AD7D5124557C8000159169 /* libavcodec.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = 09AD7D3B24555E9400159169 /* libavcodec.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		09AD7D4F24557C5600159169 /* Embed Libraries */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				09AD7D4C24557C5600159169 /* libavformat.dylib in Embed Libraries */,
+				09AD7D4E24557C5600159169 /* libavutil.dylib in Embed Libraries */,
+				09AD7D5124557C8000159169 /* libavcodec.dylib in Embed Libraries */,
+				09AD7D4A24557C5600159169 /* libavdevice.dylib in Embed Libraries */,
+			);
+			name = "Embed Libraries";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		09AD7D2124553E9700159169 /* VideoEncode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VideoEncode.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		09AD7D2424553E9700159169 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		09AD7D2624553E9700159169 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		09AD7D2824553E9800159169 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		09AD7D2B24553E9900159169 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		09AD7D2D24553E9900159169 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		09AD7D2E24553E9900159169 /* VideoEncode.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = VideoEncode.entitlements; sourceTree = "<group>"; };
+		09AD7D3424555E1500159169 /* VideoEncode-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "VideoEncode-Bridging-Header.h"; sourceTree = "<group>"; };
+		09AD7D3524555E1500159169 /* VideoEncode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VideoEncode.h; sourceTree = "<group>"; };
+		09AD7D3624555E1500159169 /* VideoEncode.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = VideoEncode.c; sourceTree = "<group>"; };
+		09AD7D3924555E9400159169 /* libavformat.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libavformat.dylib; path = VideoEncode/lib/libavformat.dylib; sourceTree = "<group>"; };
+		09AD7D3A24555E9400159169 /* libavdevice.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libavdevice.dylib; path = VideoEncode/lib/libavdevice.dylib; sourceTree = "<group>"; };
+		09AD7D3B24555E9400159169 /* libavcodec.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libavcodec.dylib; path = VideoEncode/lib/libavcodec.dylib; sourceTree = "<group>"; };
+		09AD7D3C24555E9400159169 /* libswresample.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libswresample.dylib; path = VideoEncode/lib/libswresample.dylib; sourceTree = "<group>"; };
+		09AD7D3D24555E9400159169 /* libavutil.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libavutil.dylib; path = VideoEncode/lib/libavutil.dylib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		09AD7D1E24553E9700159169 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				09AD7D4B24557C5600159169 /* libavformat.dylib in Frameworks */,
+				09AD7D4D24557C5600159169 /* libavutil.dylib in Frameworks */,
+				09AD7D5024557C8000159169 /* libavcodec.dylib in Frameworks */,
+				09AD7D4924557C5600159169 /* libavdevice.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		09AD7D1824553E9700159169 = {
+			isa = PBXGroup;
+			children = (
+				09AD7D2324553E9700159169 /* VideoEncode */,
+				09AD7D2224553E9700159169 /* Products */,
+				09AD7D3824555E9400159169 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		09AD7D2224553E9700159169 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				09AD7D2124553E9700159169 /* VideoEncode.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		09AD7D2324553E9700159169 /* VideoEncode */ = {
+			isa = PBXGroup;
+			children = (
+				09AD7D2424553E9700159169 /* AppDelegate.swift */,
+				09AD7D2624553E9700159169 /* ViewController.swift */,
+				09AD7D3524555E1500159169 /* VideoEncode.h */,
+				09AD7D3624555E1500159169 /* VideoEncode.c */,
+				09AD7D2824553E9800159169 /* Assets.xcassets */,
+				09AD7D2A24553E9900159169 /* Main.storyboard */,
+				09AD7D2D24553E9900159169 /* Info.plist */,
+				09AD7D2E24553E9900159169 /* VideoEncode.entitlements */,
+				09AD7D3424555E1500159169 /* VideoEncode-Bridging-Header.h */,
+			);
+			path = VideoEncode;
+			sourceTree = "<group>";
+		};
+		09AD7D3824555E9400159169 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				09AD7D3B24555E9400159169 /* libavcodec.dylib */,
+				09AD7D3A24555E9400159169 /* libavdevice.dylib */,
+				09AD7D3924555E9400159169 /* libavformat.dylib */,
+				09AD7D3D24555E9400159169 /* libavutil.dylib */,
+				09AD7D3C24555E9400159169 /* libswresample.dylib */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		09AD7D2024553E9700159169 /* VideoEncode */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 09AD7D3124553E9900159169 /* Build configuration list for PBXNativeTarget "VideoEncode" */;
+			buildPhases = (
+				09AD7D1D24553E9700159169 /* Sources */,
+				09AD7D1E24553E9700159169 /* Frameworks */,
+				09AD7D1F24553E9700159169 /* Resources */,
+				09AD7D4F24557C5600159169 /* Embed Libraries */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = VideoEncode;
+			productName = VideoEncode;
+			productReference = 09AD7D2124553E9700159169 /* VideoEncode.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		09AD7D1924553E9700159169 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1140;
+				LastUpgradeCheck = 1140;
+				ORGANIZATIONNAME = jdapple;
+				TargetAttributes = {
+					09AD7D2024553E9700159169 = {
+						CreatedOnToolsVersion = 11.4.1;
+						LastSwiftMigration = 1140;
+					};
+				};
+			};
+			buildConfigurationList = 09AD7D1C24553E9700159169 /* Build configuration list for PBXProject "VideoEncode" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 09AD7D1824553E9700159169;
+			productRefGroup = 09AD7D2224553E9700159169 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				09AD7D2024553E9700159169 /* VideoEncode */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		09AD7D1F24553E9700159169 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				09AD7D2924553E9800159169 /* Assets.xcassets in Resources */,
+				09AD7D2C24553E9900159169 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		09AD7D1D24553E9700159169 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				09AD7D2724553E9700159169 /* ViewController.swift in Sources */,
+				09AD7D2524553E9700159169 /* AppDelegate.swift in Sources */,
+				09AD7D3724555E1500159169 /* VideoEncode.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		09AD7D2A24553E9900159169 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				09AD7D2B24553E9900159169 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		09AD7D2F24553E9900159169 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		09AD7D3024553E9900159169 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		09AD7D3224553E9900159169 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = VideoEncode/VideoEncode.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = FUS4AN23VD;
+				ENABLE_HARDENED_RUNTIME = NO;
+				INFOPLIST_FILE = VideoEncode/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/VideoEncode/lib",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.livi.VideoEncode;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "VideoEncode/VideoEncode-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/VideoEncode/include/";
+			};
+			name = Debug;
+		};
+		09AD7D3324553E9900159169 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = VideoEncode/VideoEncode.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = FUS4AN23VD;
+				ENABLE_HARDENED_RUNTIME = NO;
+				INFOPLIST_FILE = VideoEncode/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/VideoEncode/lib",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.livi.VideoEncode;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "VideoEncode/VideoEncode-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/VideoEncode/include/";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		09AD7D1C24553E9700159169 /* Build configuration list for PBXProject "VideoEncode" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				09AD7D2F24553E9900159169 /* Debug */,
+				09AD7D3024553E9900159169 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		09AD7D3124553E9900159169 /* Build configuration list for PBXNativeTarget "VideoEncode" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				09AD7D3224553E9900159169 /* Debug */,
+				09AD7D3324553E9900159169 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 09AD7D1924553E9700159169 /* Project object */;
+}
